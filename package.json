@@ -1,0 +1,42 @@
+{
+  "name": "haraka-plugin-auth-sqlite",
+  "version": "1.0.0",
+  "description": "A SQLite backed user authentication plugin, compatible with haraka-plugin-auth-enc-file.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "better-sqlite3": "^8.6.0",
+    "haraka-config": "*",
+    "sha512crypt-node": "^0.1.0",
+    "yargs": "^13.2.2"
+  },
+  "devDependencies": {
+    "eslint": ">=8",
+    "eslint-plugin-haraka": "*",
+    "haraka-test-fixtures": "*",
+    "mocha": ">=9"
+  },
+  "scripts": {
+    "lint": "npx eslint *.js test",
+    "lintfix": "npx eslint --fix *.js test",
+    "test": "npx mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stanek0j/haraka-plugin-auth-sqlite.git"
+  },
+  "keywords": [
+    "haraka",
+    "plugin",
+    "authentication",
+    "sqlite"
+  ],
+  "author": "Jaromír Staněk <jaromir.stanek@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stanek0j/haraka-plugin-auth-sqlite/issues"
+  },
+  "homepage": "https://github.com/stanek0j/haraka-plugin-auth-sqlite#readme"
+}
