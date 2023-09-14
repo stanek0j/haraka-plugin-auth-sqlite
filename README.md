@@ -14,19 +14,19 @@ Example:
 db_file=auth.db
 ```
 
-##Managing users
+## Managing users
 
 Simple tool for managing users in database is provided. SHA512-CRYPT hashes are generated automatically as needed. Syntax for the tool is:
 
 `node ./manage.js [command] <args>`
 
-###List users
+### List users
 
 For listing all users in database, use:
 
 `node ./manage.js list`
 
-###Create user
+### Create user
 
 To add a new user, use:
 
@@ -34,7 +34,7 @@ To add a new user, use:
 
 There is no need to retype password. Also, password is stored in hashed form.
 
-###Modify user
+### Modify user
 
 To change user password, use:
 
@@ -44,7 +44,7 @@ There is no need to retype new password or to type old password. Also, password 
 
 To change the name of the user you have to delete the old user and create a new one.
 
-###Delete user
+### Delete user
 
 To delete a user, use:
 
